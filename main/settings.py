@@ -37,8 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    #Apps installés
     "rest_framework",
+
+    # Mon api
     "blog",
 ]
 
@@ -131,6 +133,7 @@ MEDIA_ROOT = Path.joinpath(BASE_DIR, "media/")
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# Définition des autorisations 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.AllowAny',
